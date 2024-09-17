@@ -1,0 +1,41 @@
+﻿<h1>@ViewData["Title"]</h1>
+@model List<Visitante>
+<h1>Cadastro dos Professores</h1>
+<link rel="stylesheet" href="site.css">
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Data de entrada</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (Visitante visitante in Model)
+                {
+                    <tr>
+                        <td>@visitante.Nome</td>
+                        <td>@visitante.Documento</td>
+                        <td>@visitante.DataEntrada</td>
+                        <td>@visitante.</td>
+                        <td>
+@*                             <div class="d-grid gap-2 d-md-block">
+                                <a type="submit" class="btn btn-warning" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
+                                <a type="submit" class="btn btn-danger" role="button" asp-controller="Professor" asp-action="ExcluirProfessor" asp-route-id="@professor.Id">Excluir</a>
+                            </div>
+ *@
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<div class="text-center">
+    <a class="btn btn-primary" type="button" asp-controller="Visitante" asp-action="AdicionarVisitante">Adicionar Visitante</a>
+</div>

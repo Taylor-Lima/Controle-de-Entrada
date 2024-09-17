@@ -1,0 +1,41 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    overflow: hidden; /* Remove a rolagem da página inteira */
+}
+
+.menu-item {
+    display: block;
+    margin-bottom: 4.25rem;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    background-color: teal;
+    border-radius: 7px;
+}
+
+
+.textP {
+    display: flex;
+    text-align:center ;
+    justify-content: center;
+    font-size: 50px;
+}
