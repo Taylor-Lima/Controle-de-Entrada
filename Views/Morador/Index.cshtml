@@ -1,7 +1,11 @@
-﻿<h1>@ViewData["Title"]</h1>
+﻿@*@{
+    Layout = null;
+}
+*@
+<h1>@ViewData["Title"]</h1>
 @model List<Morador>
 <h1>Cadastro dos Moradores</h1>
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="teste.css">
 <div>
     <table class="table">
         <thead>
@@ -37,5 +41,5 @@
 </div>
 
 <div class="text-center">
-    <a class="btn btn-primary" type="button" asp-controller="Morador" asp-action="AdicionarMorador">Adicionar Visitante</a>
+    <a class="btn btn-primary" type="button" asp-controller="Morador" asp-action="AdicionarMorador">Adicionar Morador</a>
 </div>

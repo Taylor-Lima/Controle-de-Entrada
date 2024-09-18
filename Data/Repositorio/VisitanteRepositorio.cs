@@ -16,6 +16,12 @@ namespace Controle_Entrada.Data.Repositorio
         {
             return _bancoContexto.Visitante.ToList();
         }
+        public void InserirVisitante(Visitante visitante)
+        {
+            _bancoContexto.Visitante.Add(visitante);
+            _bancoContexto.SaveChanges();
+        }
+
 
     }
 }

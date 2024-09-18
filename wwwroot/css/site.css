@@ -19,7 +19,8 @@ html {
 
 body {
     margin-bottom: 60px;
-    overflow: hidden; /* Remove a rolagem da página inteira */
+    background-color: teal;
+    /*overflow: hidden;*/ /* Remove a rolagem da página inteira */
 }
 
 .menu-item {

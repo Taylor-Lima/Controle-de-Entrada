@@ -1,26 +1,26 @@
-﻿using Controle_Entrada.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore;
+﻿//using Controle_Entrada.Models;
+//using Microsoft.EntityFrameworkCore.Metadata.Builders;
+//using Microsoft.EntityFrameworkCore;
 
-namespace Controle_Entrada.Data.Mapeamento
-{
-    public class EntradaSaidaMapeamento : IEntityTypeConfiguration<EntradaSaida>
-    {
+//namespace Controle_Entrada.Data.Mapeamento
+//{
+//    public class EntradaSaidaMapeamento : IEntityTypeConfiguration<EntradaSaida>
+//    {
         
-            public void Configure(EntityTypeBuilder<EntradaSaida> builder)
-            {
-                builder.ToTable("EntradaSaida");
+//            public void Configure(EntityTypeBuilder<EntradaSaida> builder)
+//            {
+//                builder.ToTable("EntradaSaida");
 
-                builder.HasKey(t => t.Id);
+//                builder.HasKey(t => t.Id);
 
-                builder.Property(t => t.VisitanteId).HasColumnType("varchar(30)");
-                //builder.Property(t => t.Visitante).HasColumnType("varchar(20)");
-                builder.Property(t => t.DataEntrada).HasColumnType("DateTime");
-                builder.Property(t => t.DataSaida).HasColumnType("DateTime");
+//                builder.Property(t => t.VisitanteId).HasColumnType("varchar(30)");
+//                //builder.Property(t => t.Visitante).HasColumnType("varchar(20)");
+//                builder.Property(t => t.DataEntrada).HasColumnType("DateTime");
+//                builder.Property(t => t.DataSaida).HasColumnType("DateTime");
 
-            }
-        }
-    }
+//            }
+//        }
+//    }
 
 //public class EntradaSaida
 //{

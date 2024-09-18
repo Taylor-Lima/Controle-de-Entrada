@@ -1,7 +1,7 @@
 ﻿@model Visitante
 
 
-<form asp-controller="Visitante" asp-action="" method="post">
+<form asp-controller="Visitante" asp-action="InserirVisitante" method="post">
 
     <div class="mb-3 col-md-2">
         <label class="form-label">Nome</label>
@@ -12,8 +12,8 @@
         <input type="text" asp-for="Documento" class="form-control">
     </div>
     <div class="mb-3 col-md-2">
-        <label class="form-label">Sala</label>
-        <input type="text" asp-for="DataEntrada" class="form-control">
+        <label class="form-label">Horário</label>
+        <input type="text" asp-for="Hora" class="form-control">
     </div>
 
     <div>
