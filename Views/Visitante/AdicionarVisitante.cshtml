@@ -1,26 +1,26 @@
 ﻿@model Visitante
 
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<form asp-controller="Visitante" asp-action="InserirVisitante" method="post">
+
+<form class="add-list" asp-controller="Visitante" asp-action="InserirVisitante" method="post">
 
     <div class="mb-3 col-md-2">
         <label class="form-label">Nome</label>
         <input type="text" asp-for="Nome" class="form-control">
     </div>
     <div class="mb-3 col-md-2">
-        <label class="form-label">Disciplina</label>
+        <label class="form-label">Documento</label>
         <input type="text" asp-for="Documento" class="form-control">
     </div>
     <div class="mb-3 col-md-2">
-        <label class="form-label">Horário</label>
+        <label class="form-label" placeholder="dd/mm/aa">Horário</label>
         <input type="text" asp-for="Hora" class="form-control">
     </div>
-
-    <div>
-        <button type="submit" class="btn btn-primary">Adicionar</button>
-    </div>
 </form>
-
+<div class="button-add">
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+</div>
 
 @*     public class Visitante
     {

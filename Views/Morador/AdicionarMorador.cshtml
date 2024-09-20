@@ -1,11 +1,8 @@
 ﻿@model Morador
 
-@*@section Styles{
-    <link rel="stylesheet" href="~/css/teste.css" asp-append-version="true" />
-}
-*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<form asp-controller="Morador" asp-action="InserirMorador" method="post">
+<form class="add-list" asp-controller="Morador" asp-action="InserirMorador" method="post">
 
     <div class="mb-3 col-md-2">
         <label class="form-label">Nome</label>
@@ -23,9 +20,8 @@
         <label class="form-label">Telefone</label>
         <input type="text" asp-for="Telefone" class="form-control">
     </div>
-
-    <div>
-        <button type="submit" class="btn btn-primary">Adicionar</button>
-    </div>
 </form>
 
+<div class="button-add">
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+</div>

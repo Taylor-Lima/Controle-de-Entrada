@@ -1,7 +1,5 @@
-﻿@*@{
-    Layout = null;
-}
-*@
+﻿<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
 <h1>@ViewData["Title"]</h1>
 @model List<Morador>
 <h1>Cadastro dos Moradores</h1>
@@ -40,6 +38,6 @@
     </table>
 </div>
 
-<div class="text-center">
+<div class="button">
     <a class="btn btn-primary" type="button" asp-controller="Morador" asp-action="AdicionarMorador">Adicionar Morador</a>
 </div>
