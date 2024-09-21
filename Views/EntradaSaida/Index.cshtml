@@ -1,15 +1,10 @@
-﻿
+﻿<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
 
 
 <div class="list">
-    <ul class="order">
-        <li class="nav-item">
-            <a  asp-area="" asp-controller="Morador" asp-action="Index">Moradores</a>
-        </li>
-        <li class="nav-item">
-            <a  asp-area="" asp-controller="Visitante" asp-action="Index">Visitantes</a>
-        </li>
-        <li class="nav-item">
-        </li>
-    </ul>
+    <a asp-area="" asp-controller="Morador" asp-action="Index">Moradores</a>
+</div>
+<div>
+    <a button type="submit" class="btn btn-primary" asp-area="" asp-controller="Visitante" asp-action="Index">Visitantes</a>
 </div>

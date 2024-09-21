@@ -1,6 +1,6 @@
 ﻿<h1>@ViewData["Title"]</h1>
 @model List<Visitante>
-<h1>Cadastro dos Visitantes</h1>
+<h1>Visitantes do Capends</h1>
 <link rel="stylesheet" href="site.css">
 <div>
     <table class="table">
@@ -20,7 +20,6 @@
                         <td>@visitante.Nome</td>
                         <td>@visitante.Documento</td>
                         <td>@visitante.Hora</td>
-                        <td>@visitante.</td>
                         <td>
 @*                             <div class="d-grid gap-2 d-md-block">
                                 <a type="submit" class="btn btn-warning" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
@@ -36,6 +35,3 @@
     </table>
 </div>
 
-<div class="text-center">
-    <a class="btn btn-primary" type="button" asp-controller="Visitante" asp-action="AdicionarVisitante">Adicionar Visitante</a>
-</div>

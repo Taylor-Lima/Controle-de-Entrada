@@ -16,7 +16,7 @@ namespace Controle_Entrada.Data.Mapeamento
 
             builder.Property(t => t.Nome).HasColumnType("varchar(30)");
             builder.Property(t => t.Documento).HasColumnType("varchar(20)");
-            builder.Property(t => t.Hora).HasColumnType("DateOnly");
+            builder.Property(t => t.Hora).HasColumnType("DateTime");
 
         }
     }

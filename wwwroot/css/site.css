@@ -40,23 +40,47 @@ body {
 .nav-link:hover {
         color: #007bff; 
 }
-.add-list {
-    height: 100px;
-    width: 100%;
+/*.add-list {
     display: flex;
     justify-content: center;
     gap: 6px;
-}
+}*/
 .button {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.button-add {
-  /*  height: 100px;
-    width: 100%;*/
+/*.button-add {
+    display: flex;
+    justify-content: center;*/ /* Centraliza horizontalmente */
+    /*align-items: center;*/ /* Centraliza verticalmente */
+   /* Define a altura da tela inteira */
+/*}*/
+.list {
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 14px;
+    font-size: 25px;
+    padding:60px;
+}
+.list-one {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: solid 1px;
+    border-radius: 3px;
+    background-color: teal;
+}
+.add-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.button-add {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 15px;
 }

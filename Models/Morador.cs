@@ -19,11 +19,11 @@
 //Telefone VARCHAR(11) NOT NULL,
 //Hora Datetime NOT NULL,
 //)
-  
+
 
 //CREATE TABLE Visitante (
 //Id INT IDENTITY(1,1) NOT NULL,
 //Nome VARCHAR(30) NOT NULL,
 //Documento VARCHAR(20) NOT NULL,
-//Hora Datetime NOT NULL,
+//Hora DATETIME DEFAULT GETDATE() NOT NULL,
 //)
