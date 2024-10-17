@@ -9,6 +9,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Documento</th>
                 <th scope="col">Data de entrada</th>
+                <th scope="col">Observação</th>
             </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@
                         <td>@visitante.Nome</td>
                         <td>@visitante.Documento</td>
                         <td>@visitante.Hora</td>
+                        <td>@visitante.Oberservacao</td>
                         <td>
 @*                             <div class="d-grid gap-2 d-md-block">
                                 <a type="submit" class="btn btn-warning" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
@@ -30,7 +32,7 @@
                     </tr>
                 }
             }
-
+             
         </tbody>
     </table>
 </div>

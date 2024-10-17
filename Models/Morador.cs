@@ -1,15 +1,28 @@
 ﻿namespace Controle_Entrada.Models
 {
     public class Morador
-    {    
-            public int Id { get; set; }
-            public string Nome { get; set; }
-            public string Unidade { get; set; }
-            public string PlacaVeiculo { get; set; }
-            public string Telefone { get; set; }
-            public DateTime Hora { get; set; }
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Unidade { get; set; }
+        public string PlacaVeiculo { get; set; }
+        public string Telefone { get; set; }
+        public DateTime Hora { get; set; }
+        //public Teste teste { get; set; 
     }
     }
+    //public class Teste
+    //{
+    //    public int IdTeste { get; set; }
+    //}
+    //}
+
+
+
+
+
+
+
 
 //CREATE TABLE Morador (
 //Id INT IDENTITY(1,1) NOT NULL,

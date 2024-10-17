@@ -22,6 +22,7 @@ namespace Controle_Entrada.Data
         //public DbSet<EntradaSaida> EntradaSaida { get; set; }
         public DbSet<Morador> Morador { get; set; }
         public DbSet<Visitante> Visitante { get; set; }
+        public DbSet<Login> Login { get; set; }
     }
 }
 

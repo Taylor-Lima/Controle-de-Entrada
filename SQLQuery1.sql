@@ -1,0 +1,1 @@
+﻿Insert into Login(Usuario, Senha) Values('TaylorStaff', 'taylor123')

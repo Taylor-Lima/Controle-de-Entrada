@@ -15,6 +15,7 @@ builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(con
 builder.Services.AddScoped<IVisitanteRepositorio, VisitanteRepositorio>();
 builder.Services.AddScoped<IMoradorRepositorio, MoradorRepositorio>();
 builder.Services.AddScoped<IRelatorioRepositorio, RelatorioRepositorio>();
+builder.Services.AddScoped<ILoginRepositorio, LoginRepositorio>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Morador}/{action=AdicionarMorador}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

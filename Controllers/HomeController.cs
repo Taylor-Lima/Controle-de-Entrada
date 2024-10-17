@@ -15,6 +15,8 @@ namespace Controle_Entrada.Controllers
 
         public IActionResult Index()
         {
+            //Morador morador = new Morador();
+            //morador.teste.IdTeste = 1;
             return View();
         }
 
