@@ -12,7 +12,7 @@
     
 ## Tecnologias Utilizadas
 
-    Backend: C#
+    Backend: C# SQL-Server
     Frontend: HTML, CSS, JavaScript
     Arquitetura: MVC Model-View-Controller**
 
